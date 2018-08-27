@@ -86,19 +86,18 @@
 
 \defbeamertemplate*{headline}{KTHprofile}
 {%
-	    \ifnum \insertpagenumber=1
-
-		\begin{beamercolorbox}[wd=\paperwidth,leftskip=3mm,sep=0pt]{logo page header}
-		\begin{tabular}[t]{p{0.72\paperwidth} p{0.18\paperwidth}}
-	        \vspace{3mm}
-		    \includegraphics[width=11mm]{kth_cmyk_logo.eps}
-		    &
-			\vspace{3mm}
-		    \pbox{25mm}{\uppercase{\bfseries\fontsize{2mm}{1em}\selectfont KTH Royal Institute \\ of Technology}} \\
-		\end{tabular}
-		\end{beamercolorbox}%
-
-		 \else
+  \ifnum \insertpagenumber=1
+  \begin{beamercolorbox}[wd=\paperwidth,leftskip=3mm,sep=0pt]{logo page header}
+    \begin{tabular}[t]{p{0.7\paperwidth} p{0.30\paperwidth}}
+      \vspace{3mm}
+      \includegraphics[width=11mm]{kth_cmyk_logo.eps}
+      &
+        \vspace{3mm}
+        \pbox{30mm}{\uppercase{\bfseries\fontsize{2mm}{1em}\selectfont
+        KTH  Royal Institute \\ of Technology}} \\
+    \end{tabular}
+  \end{beamercolorbox}%
+  \else
 %	\begin{tabular}{p{0.09\paperwidth} p{0.7\paperwidth}}
 %	    \vspace{2mm}
 %		\hspace{2mm}
