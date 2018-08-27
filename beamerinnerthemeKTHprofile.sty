@@ -93,8 +93,10 @@
       \includegraphics[width=11mm]{kth_cmyk_logo.eps}
       &
         \vspace{3mm}
-        \pbox{30mm}{\uppercase{\bfseries\fontsize{2mm}{1em}\selectfont
-        KTH  Royal Institute \\ of Technology}} \\
+        % \pbox{30mm}{\uppercase{\bfseries\fontsize{2mm}{1em}\selectfont
+        % KTH  Royal Institute \\ of Technology}} \\
+      \pbox{30mm}{\uppercase{\bfseries\fontsize{2mm}{1em}\selectfont
+      \insertsubtitle}} \\
     \end{tabular}
   \end{beamercolorbox}%
   \else
@@ -123,18 +125,21 @@
 %	\end{tabularx}
 
 
-	\begin{tabular}{p{0.09\paperwidth} b{0.7\paperwidth}}
-%	    \vspace{2mm}
-		\hspace{2mm}
-	    \includegraphics[width=9mm]{kth_cmyk_logo.eps}
-	    &
-%		\vspace{2mm}
-		\usebeamerfont{frametitle}\insertframetitle
-	\end{tabular}
+  \begin{tabular}[t]{p{0.09\paperwidth} b{0.61\paperwidth} p{0.30\paperwidth}|}
+    % \vspace{2mm}
+    \hspace{2mm}
+    \includegraphics[width=9mm]{kth_cmyk_logo.eps}
+    &
+    % \vspace{2mm}
+      \usebeamerfont{frametitle}\insertframetitle
+    &
+      \pbox{21mm}{\uppercase{\bfseries\fontsize{2mm}{1em}\selectfont
+      \insertsubtitle}}
+  \end{tabular}
 
 
 
-	\fi
+  \fi
 }
 
 
